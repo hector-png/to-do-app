@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    mode: development,
+    mode: 'development',
     devtool: 'inline-source-map',
     devServer: {
         static: './dist',
@@ -30,7 +30,4 @@ module.exports = {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
     },
-    optimization: {
-        runtimeChunk: 'single',
-      },
 };
