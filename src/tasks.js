@@ -1,4 +1,4 @@
-class Task {
+export default class Task {
     isCompleted = false;
 
     constructor(title, description, dueDate, priority) {

@@ -1,4 +1,4 @@
-class Project {
+export default class Project {
     projectTaskList = [];
 
     constructor(name, label = 'default') {
