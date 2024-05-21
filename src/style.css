@@ -10,10 +10,6 @@ body {
 }
 
 /* Header */
-/* #header {
-   background-color: ;
-} */
-
 #header > ul {
     color: white;
     display: grid;
