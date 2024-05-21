@@ -34,16 +34,16 @@ li {
     grid-area: 1 / 2;
 }
 
-/* Content / Dashboard */
-#content {
+/* Dashboard */
+#dashboard {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
 }
 
 .dashboard-header {
     display: flex;
-    flex-direction: column;
-    justify-content: start;
+    flex-direction: column; 
     gap: 30px;
     grid-column: 2;
 }
@@ -51,4 +51,42 @@ li {
 .date,
 .dashboard-title {
     color: #cad4de
+}
+
+.dashboard-title {
+    font-weight: 500;
+}
+
+/* Todo Container */
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    border-top: solid grey 2px;
+    border-bottom: solid grey 2px;
+    grid-area: 2 / 2;
+}
+
+/* Add Task */
+.add-task {
+    display: grid;
+    grid-template-columns: 55px 100px;
+    align-items: center;
+    grid-area: 3 / 2;
+}
+
+.task-button {
+    color: white;
+    background-color: transparent;
+    text-align: start;
+    font-size: 1.5rem;
+    font-weight: 300;
+    border: none;
+}
+
+.add-task > li  > svg {
+    height: 40px;
+    width: 50px;
+    margin-right: 8px;
 }
