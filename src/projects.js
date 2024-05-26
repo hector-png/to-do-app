@@ -6,14 +6,6 @@ export default class Project {
         this.label = label;
     }
 
-    get projectName() {
-        return this.name;
-    }
-
-    set projectName(value) {
-        this.projectName = value;
-    }
-
     get taskList() {
         return this.projectTaskList;
     }
