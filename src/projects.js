@@ -10,6 +10,10 @@ export default class Project {
         return this.projectTaskList;
     }
 
+    set taskList(newList) {
+        this.projectTaskList = newList;
+    }
+
     addTask(task) {
         this.projectTaskList.push(task);
     }
